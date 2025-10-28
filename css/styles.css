@@ -43,6 +43,14 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+.portfolio-section,
+.team-section,
+.text-advantages-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -53,6 +61,13 @@ body {
   .container {
     max-width: 1158px;
     padding: 0 15px;
+  }
+
+  .portfolio-section,
+  .team-section,
+  .text-advantages-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -68,12 +83,13 @@ body {
 }
 
 .logo.header-logo {
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
 @media (min-width: 768px) {
   .logo.header-logo {
     margin-right: 120px;
+    padding: 24px 0;
   }
 }
 .header-logo .logo-part {
@@ -100,6 +116,7 @@ body {
 .header-button {
   border: none;
   background: transparent;
+  display: flex;
 }
 
 @media (min-width: 768px) {
@@ -177,6 +194,43 @@ body {
   color: #404bbf;
 }
 
+.nav-list,
+.contacts-list {
+  align-items: center;
+  gap: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+    display: flex;
+  }
+}
+
+@media (min-width: 1158px) {
+  .logo.header-logo {
+    margin-right: 76px;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 /* Головний заголовок */
 .main-title-section {
   background: #2e2f42;
@@ -202,15 +256,15 @@ body {
 }
 
 .main-title {
-  font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   margin: 0 auto;
-  max-width: 496px;
   margin-bottom: 48px;
+  font-size: 36px;
+  max-width: 216px;
 }
 
 /* Кнопка */
@@ -231,9 +285,53 @@ body {
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (min-width: 768px) {
+  .main-title-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-position: center;
+    max-width: 768px;
+  }
+  .main-title {
+    font-size: 56px;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .main-title-section {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .main-title {
+    margin-bottom: 48px;
+  }
+}
+
+.text-advantages {
+  align-items: center;
+  gap: 72px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.future-container {
+  width: 100%;
+}
 
 .icons-box {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .text-advantages {
+    gap: 72px 24px;
+  }
+  .future-container {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media (min-width: 1158px) {
@@ -248,6 +346,10 @@ body {
     justify-content: center;
     margin-bottom: 8px;
     flex-shrink: 0;
+  }
+
+  .future-container {
+    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -296,20 +398,9 @@ body {
   overflow: hidden;
 }
 
-.text-advantages {
-  display: flex;
-  align-items: baseline;
-  gap: 24px;
-}
-
 .main-button:hover,
 .main-button:focus {
   background-color: #404bbf;
-}
-
-.future-container {
-  margin-right: 0;
-  flex-basis: calc((100% - 72px) / 4);
 }
 
 /* Тексти */
@@ -460,11 +551,11 @@ body {
   transform: translateY(0%);
 }
 @media (min-width: 1158px) {
- .back-portfolio:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+  .back-portfolio:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
+}
 
 .footer-logo-box {
   margin-right: 120px;
@@ -690,7 +781,6 @@ body {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-  
 }
 
 .modal-label-agreement {
@@ -791,8 +881,7 @@ body {
 
 @media (max-width: 767px) {
   .footer-subscribe-button {
-    margin: 16px auto 0 auto; 
-
+    margin: 16px auto 0 auto;
   }
 }
 
@@ -812,40 +901,25 @@ body {
 }
 
 @media (min-width: 768px) {
- .footer-form {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+  .footer-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
   }
+}
 
 .modal-comment-box {
   margin-bottom: 16px;
 }
 
 @media (min-width: 320px) {
-  .nav-list,
-  .contacts-list {
-    align-items: center;
-    gap: 16px;
-    display: none;
-  }
-
   .main-title {
-    font-size: 36px;
-    max-width: 216px;
   }
 
   .main-button {
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
-  }
-
-  .text-advantages {
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
   }
 
   .team-all {
@@ -855,13 +929,6 @@ body {
 
   .back-portfolio {
     flex-basis: 100%;
-  }
-
-  .portfolio-section,
-  .team-section,
-  .text-advantages-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
   }
 
   .page-footer {
@@ -886,58 +953,26 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .nav-list {
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    display: flex;
-  }
+.team-all {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .contacts-list {
-    flex-direction: column;
-    gap: 12px;
-    display: flex;
-  }
+.back-portfolio {
+  flex-basis: calc((100% - 24px) / 2);
+}
 
-  .text-advantages {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
 
-  .team-all {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.footer-form {
+  flex-direction: column;
+  align-items: stretch;
+}
 
-  .back-portfolio {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-
-  .main-title-section {
-    padding-top: 112px;
-    padding-bottom: 112px;
-    background-position: center;
-    max-width: 768px;
-  }
-.main-title {
-    font-size: 56px;
-    max-width: 496px;
-    margin-bottom: 36px;
-  }
-
-  .footer-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .footer-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .footer-subscribe-input {
-    width: 100%;
-  }
+.footer-subscribe-input {
+  width: 100%;
 }
