@@ -71,7 +71,7 @@ body {
   }
 }
 
-/* Логотип */
+/* ------------Логотип --------------*/
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -100,11 +100,13 @@ body {
   color: #f4f4fd;
 }
 
-/* Шапка */
+/* ---------HEADER -----------------*/
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -168,7 +170,7 @@ body {
   color: #404bbf;
 }
 
-/* Контакти */
+/*------------ CONTACTS ------------ */
 .contacts {
   font-style: normal;
   margin-left: auto;
@@ -231,13 +233,11 @@ body {
   }
 }
 
-/* Головний заголовок */
+/*-- MAIN ------------------ */
 .main-title-section {
   background: #2e2f42;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/herobg.jpg);
   font-weight: 700;
   font-size: 56px;
@@ -506,8 +506,10 @@ body {
   background-color: #fff;
   width: 264px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-box {
@@ -542,8 +544,10 @@ body {
 
 @media (max-width: 1157px) {
   .back-portfolio {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow:
+      0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 }
 
@@ -595,8 +599,10 @@ body {
 }
 @media (min-width: 1158px) {
   .back-portfolio:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow:
+      0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 }
 
@@ -654,7 +660,8 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -683,7 +690,9 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 16px 24px 16px;
   background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   width: 288px;
   min-height: 623px;
@@ -695,12 +704,12 @@ body {
     padding: 72px 24px 24px 24px;
   }
 }
-/* 
+
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
-} */
+}
 
-.model-close-btn {
+.modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -714,22 +723,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.model-close-btn:hover,
-.model-close-btn:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.model-close-btn:hover > .model-close-icon,
-.model-close-btn:focus > .model-close-icon {
+.modal-close-btn:hover > .modal-close-icon,
+.modal-close-btn:focus > .modal-close-icon {
   fill: #fff;
 }
 
-.model-close-icon {
+.modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -814,7 +824,8 @@ body {
   align-items: center;
   margin-right: 8px;
   fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
@@ -842,7 +853,7 @@ body {
   color: #4d5ae5;
 }
 
-.model-button {
+.modal-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -860,8 +871,8 @@ body {
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-button:focus,
-.model-button:hover {
+.modal-button:focus,
+.modal-button:hover {
   background-color: #404bbf;
 }
 

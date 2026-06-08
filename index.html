@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--HEADER--------------------------------------------------->
     <header class="page-header">
       <div class="header-container container">
         <nav class="header-nav">
@@ -63,7 +64,7 @@
     </header>
 
     <main>
-      <!-- Hero-->
+      <!-- HERO---------------------------------------------------------->
       <section class="main-title-section">
         <div class="main-container container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
@@ -128,7 +129,7 @@
         </div>
       </section>
 
-      <!-- Team -->
+      <!-- TEAM -------------------------------------------------->
       <section class="team-section">
         <div class="container">
           <h2 class="team-main-style">Our Team</h2>
@@ -309,7 +310,7 @@
         </div>
       </section>
 
-      <!--Portfolio-->
+      <!-------------------------- PORTFOLIO--------------------->
 
       <section class="portfolio-section">
         <div class="container">
@@ -437,7 +438,7 @@
       </section>
     </main>
 
-    <!-- Footer-->
+    <!-------------------FOOTER -------------------------------------------------->
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-logo-box">
@@ -503,11 +504,11 @@
         </div>
       </div>
     </footer>
-
-    <div class="backdrop">
+    <!--Modal----------------------------------------------------------------->
+    <div class="backdrop .is-open">
       <div class="modal">
-        <button type="button" class="model-close-btn">
-          <svg class="model-close-icon" width="8" height="8">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -528,7 +529,7 @@
             </div>
           </div>
           <div class="modal-box">
-            <label class="modal-label" for="user-name">Phone</label>
+            <label class="modal-label" for="user-phone">Phone</label>
             <div class="modal-input-wrapper">
               <input
                 type="tel"
@@ -579,14 +580,14 @@
                   <use href="./images/icons.svg#icon-Vector"></use></svg></span
               ><span
                 >I accept the terms and conditions of the
-                <a href="" class="link-privasy">Privacy Policy</a></span
+                <a href="" class="link-privacy">Privacy Policy</a></span
               >
             </label>
           </div>
-          <button class="model-button" type="submit">Send</button>
+          <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>
-    <script src="./js/model.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
