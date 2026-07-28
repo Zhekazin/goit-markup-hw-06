@@ -20,11 +20,11 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-----------------HEADER--------------------------------------------------->
-    <header class="page-header">
+    <header class="page-header" id="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -62,71 +62,8 @@
         </button>
       </div>
     </header>
-    <main>
-      <!-----------MOBIL WINDOW-------------------------------------------------->
-      <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu-close" id="mobile-menu-close">
-          <svg width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <nav class="mobile-nav">
-          <ul class="mobile-nav-list">
-            <li>
-              <a
-                class="mobile-nav-link mobile-nav-link--current"
-                href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li><a class="mobile-nav-link" href="">Portfolio</a></li>
-            <li><a class="mobile-nav-link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-
-        <div class="mobile-contacts">
-          <a href="tel:+110001111111" class="mobile-phone"
-            >+11 (000) 111-11-11</a
-          >
-          <a href="mailto:info@devstudio.com" class="mobile-email"
-            >info@devstudio.com</a
-          >
-        </div>
-
-        <ul class="team-social-list mobile-social-list">
-          <li class="team-social-item">
-            <a href="" class="team-social-link">
-              <svg class="team-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-social-item">
-            <a href="" class="team-social-link">
-              <svg class="team-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-social-item">
-            <a href="" class="team-social-link">
-              <svg class="team-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-social-item">
-            <a href="" class="team-social-link">
-              <svg class="team-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!------------HERO---------------------------------------------------------->
+    <!------------HERO---------------------------------------------------------->
+    <main class="main" id="main">
       <section class="main-title-section">
         <div class="main-container container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
@@ -134,7 +71,7 @@
         </div>
       </section>
       <!-- 1111 -->
-      <section class="text-advantages-section">
+      <section class="text-advantages-section" id="features">
         <div class="container">
           <h2 class="visually-hidden">advantages</h2>
           <ul class="text-advantages">
@@ -500,7 +437,7 @@
     </main>
 
     <!-------------------FOOTER -------------------------------------------------->
-    <footer class="page-footer">
+    <footer class="page-footer" id="footer">
       <div class="container footer-container">
         <div class="footer-logo-box">
           <a href="./index.html" class="footer-logo logo">
@@ -565,8 +502,68 @@
         </div>
       </div>
     </footer>
+    <!-----------MOBIL WINDOW-------------------------------------------------->
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" id="mobile-menu-close">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li>
+            <a
+              class="mobile-nav-link mobile-nav-link--current"
+              href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li><a class="mobile-nav-link" href="">Portfolio</a></li>
+          <li><a class="mobile-nav-link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-contacts">
+        <a href="tel:+110001111111" class="mobile-phone">+11 (000) 111-11-11</a>
+        <a href="mailto:info@devstudio.com" class="mobile-email"
+          >info@devstudio.com</a
+        >
+      </div>
+
+      <ul class="team-social-list mobile-social-list">
+        <li class="team-social-item">
+          <a href="" class="team-social-link">
+            <svg class="team-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-item">
+          <a href="" class="team-social-link">
+            <svg class="team-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-item">
+          <a href="" class="team-social-link">
+            <svg class="team-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-item">
+          <a href="" class="team-social-link">
+            <svg class="team-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <!--Modal----------------------------------------------------------------->
-    <div class="backdrop .is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">

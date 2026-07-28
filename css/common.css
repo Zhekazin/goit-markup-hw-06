@@ -1,0 +1,72 @@
+/* Скидання стилів */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Базові стилі */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 320px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.portfolio-section,
+.team-section,
+.text-advantages-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .portfolio-section,
+  .team-section,
+  .text-advantages-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

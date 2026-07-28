@@ -1,0 +1,35 @@
+.future-container {
+  width: 100%;
+}
+
+.icons-box {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .text-advantages {
+    gap: 72px 24px;
+  }
+  .future-container {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1158px) {
+  .icons-box {
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+  }
+
+  .future-container {
+    width: calc((100% - 72px) / 4);
+  }
+}
