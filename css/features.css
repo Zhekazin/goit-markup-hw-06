@@ -6,9 +6,17 @@
   display: none;
 }
 
+.text-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
 @media (min-width: 768px) {
-  .text-advantages {
+  .text-features {
     gap: 72px 24px;
+    display: flex;
   }
   .future-container {
     width: calc((100% - 24px) / 2);

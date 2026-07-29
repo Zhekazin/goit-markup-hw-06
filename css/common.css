@@ -46,7 +46,7 @@ body {
 
 .portfolio-section,
 .team-section,
-.text-advantages-section {
+.text-features-section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -65,7 +65,7 @@ body {
 
   .portfolio-section,
   .team-section,
-  .text-advantages-section {
+  .text-features-section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
