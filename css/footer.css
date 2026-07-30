@@ -130,6 +130,8 @@
 
 @media (min-width: 768px) {
   .footer-container {
+    flex-direction: row;
+    align-items: baseline;
     padding-left: 108px;
     padding-right: 108px;
     justify-content: flex-start;
