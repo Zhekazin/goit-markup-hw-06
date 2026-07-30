@@ -36,8 +36,6 @@
 
 .team-section {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
   border-radius: 0px 0px 4px 4px;
 }
 .team-all {
@@ -66,5 +64,12 @@
 @media (min-width: 768px) {
   .team-all {
     gap: 64px 24px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
