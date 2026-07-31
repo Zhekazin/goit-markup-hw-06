@@ -1,9 +1,13 @@
 /*-- MAIN ------------------ */
 .main-title-section {
   background: #2e2f42;
-  background-image:
+  background-image: 
+    image-set(
+      url("../images/people-officex1.jpg") 1x,
+      url("../images/people-officex2.jpg") 2x
+    ),
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/herobg.jpg);
+    url(../images/people-officex1.jpg);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -20,6 +24,14 @@
   background-size: cover;
 }
 
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  .main-title-section {
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/herobg@2x.jpg);
+  }
+}
+
 .main-title {
   font-weight: 700;
   line-height: 1.07;
@@ -27,22 +39,9 @@
   text-align: center;
   color: #fff;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   font-size: 36px;
   max-width: 216px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* Кнопка */
@@ -63,6 +62,12 @@
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #404bbf;
+}
+
 @media (min-width: 768px) {
   .main-title-section {
     padding-top: 112px;
@@ -86,11 +91,4 @@
   .main-title {
     margin-bottom: 48px;
   }
-}
-
-.text-features {
-  align-items: center;
-  gap: 72px;
-  display: flex;
-  flex-wrap: wrap;
 }

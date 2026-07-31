@@ -56,7 +56,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 
@@ -75,7 +75,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: #4d5ae5;
 }
 
@@ -90,6 +90,17 @@
 .mobile-social-list {
   justify-content: flex-start;
   gap: 40px;
+}
+
+.mobile-contacts {
+  font-style: normal;
+}
+
+.mobile-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
 }
 
 @media (min-width: 768px) {
