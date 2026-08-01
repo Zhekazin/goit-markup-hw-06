@@ -1,13 +1,12 @@
 /*-- MAIN ------------------ */
 .main-title-section {
-  background: #2e2f42;
+  background-color: #2e2f42;
   background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     image-set(
       url("../images/people-officex1.jpg") 1x,
       url("../images/people-officex2.jpg") 2x
-    ),
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-officex1.jpg);
+    );
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
