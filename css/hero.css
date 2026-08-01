@@ -16,7 +16,6 @@
   color: #fff;
   width: 100%;
   margin: 0 auto;
-  max-width: 320px;
   padding-top: 72px;
   padding-bottom: 72px;
   background-repeat: no-repeat;
@@ -35,7 +34,7 @@
 
 .main-title {
   font-weight: 700;
-  line-height: 1.11;  
+  line-height: 1.07;  
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
@@ -74,7 +73,6 @@
     padding-top: 112px;
     padding-bottom: 112px;
     background-position: center;
-    max-width: 768px;
   }
   .main-title {
     font-size: 56px;
