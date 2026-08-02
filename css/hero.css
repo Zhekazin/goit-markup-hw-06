@@ -4,8 +4,8 @@
   background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     image-set(
-      url("../images/people-officex1.jpg") 1x,
-      url("../images/people-officex2.jpg") 2x
+      url("../images/herobg@1x.jpg") 1x,
+      url("../images/herobg@2x.jpg") 2x
     );
   font-weight: 700;
   font-size: 56px;
